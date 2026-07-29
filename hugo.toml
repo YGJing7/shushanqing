@@ -1,7 +1,7 @@
 baseURL = "https://blog.shushanqing.ccwu.cc/"
-languageCode = "zh-cn"
+locale = "zh-CN"
 title = "蜀山青"
-theme = "PaperMod"
+theme = ["hugo-PaperMod"]
 enableRobotsTXT = true
 paginate = 10
 
