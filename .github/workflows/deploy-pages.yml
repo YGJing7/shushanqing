@@ -23,6 +23,8 @@ jobs:
           submodules: recursive
           fetch-depth: 0
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/setup-go@v5
         with:
           go-version: stable
