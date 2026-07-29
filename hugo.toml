@@ -1,7 +1,7 @@
 baseURL = "https://blog.shushanqing.ccwu.cc/"
 locale = "zh-CN"
 title = "蜀山青"
-theme = ["hugo-PaperMod"]
+theme = ["github.com/adityatelange/hugo-PaperMod"]
 enableRobotsTXT = true
 paginate = 10
 
