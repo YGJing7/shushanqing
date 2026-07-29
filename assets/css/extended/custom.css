@@ -1,0 +1,15 @@
+:root {
+  --theme: #f8faf7;
+  --entry: #ffffff;
+  --primary: #173e2f;
+  --secondary: #5b7066;
+  --tertiary: #e8eee9;
+  --content: #203328;
+  --border: #d7e1d9;
+}
+
+.logo a {
+  color: #1f4d3a;
+  font-family: "Noto Serif SC", "Songti SC", serif;
+  letter-spacing: .12em;
+}

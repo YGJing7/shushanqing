@@ -1,0 +1,48 @@
+baseURL = "https://blog.shushanqing.ccwu.cc/"
+languageCode = "zh-cn"
+title = "蜀山青"
+theme = "PaperMod"
+enableRobotsTXT = true
+paginate = 10
+
+[params]
+  env = "production"
+  description = "记录思考、阅读与生活。"
+  author = "蜀山青"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  mainSections = ["posts"]
+
+[params.homeInfoParams]
+  Title = "蜀山青"
+  Content = "记录思考、阅读与生活。"
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"

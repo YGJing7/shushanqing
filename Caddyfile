@@ -1,0 +1,5 @@
+blog.shushanqing.ccwu.cc {
+    root * /var/www/shushanqing
+    encode zstd gzip
+    file_server
+}
