@@ -5,7 +5,7 @@ backend:
   name: github
   repo: YGJing7/shushanqing
   branch: main
-  base_url: https://decap-proxy.YOUR-SUBDOMAIN.workers.dev  # ← 替换成你的 Worker 地址
+  base_url: https://decap-proxy.ygjing7.workers.dev  # ← 替换成你的 Worker 地址
   auth_endpoint: /auth
 
 # 后台界面语言：中文
