@@ -1,11 +1,10 @@
 # Decap CMS 配置（Hugo + PaperMod）
-# 注意：base_url 里的 Worker 地址要在部署好 Worker 之后替换成实际地址
 
 backend:
   name: github
   repo: YGJing7/shushanqing
   branch: main
-  base_url: https://decap-proxy.ygjing7.workers.dev  # ← 替换成你的 Worker 地址
+  base_url: https://decap-proxy.ygjing7.workers.dev
   auth_endpoint: /auth
 
 # 后台界面语言：中文
@@ -30,4 +29,13 @@ collections:
       - { label: "草稿", name: "draft", widget: "boolean", default: false }
       - { label: "标签", name: "tags", widget: "list", required: false }
       - { label: "摘要", name: "description", widget: "text", required: false }
+      - label: "封面图"
+        name: "cover"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields:
+          - { label: "图片", name: "image", widget: "image" }
+          - { label: "替代文字", name: "alt", widget: "string", required: false }
+          - { label: "图注", name: "caption", widget: "string", required: false }
       - { label: "正文", name: "body", widget: "markdown" }
